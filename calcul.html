@@ -1,0 +1,49 @@
+<!-- Documento HTML-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css">
+</head>
+<body>
+<!-- Empieza codigo calculadora html-->
+  <form name="cal">
+    <h3>Calculadora <a href="#">ANIMALES SUELTOS</a></h3>
+    <p>Calculo de Precios</p>
+    <input type="textfield" name="ans" value="">
+    <input type="textfield" name="cantki" value="">
+    <br>
+    <input type="button" value="BOLSA" onClick="document.cal.bolsa.value=eval(document.cal.ans.value)*1.25">
+    <input type="button" value="KILO" onClick="document.cal.kilo.value=eval(document.cal.ans.value)*1.45/(document.cal.cantki.value)">
+        
+    <input type="reset" value="BORRAR">
+    <br>
+    <input type="button" value="1" onClick="document.cal.ans.value+='1'">
+    <input type="button" value="2" onClick="document.cal.ans.value+='2'">
+    <input type="button" value="3" onClick="document.cal.ans.value+='3'">
+    <input type="button" value="+" onClick="document.cal.ans.value+='+'">
+    <br>
+    <input type="button" value="4" onClick="document.cal.ans.value+='4'">
+    <input type="button" value="5" onClick="document.cal.ans.value+='5'">
+    <input type="button" value="6" onClick="document.cal.ans.value+='6'">
+    <input type="button" value="-" onClick="document.cal.ans.value+='-'">
+    <br>
+    <input type="button" value="7" onClick="document.cal.ans.value+='7'">
+    <input type="button" value="8" onClick="document.cal.ans.value+='8'">
+    <input type="button" value="9" onClick="document.cal.ans.value+='9'">
+    <input type="button" value="*" onClick="document.cal.ans.value+='*'">
+    <br>
+    <input type="button" value="0" onClick="document.cal.ans.value+='0'">
+    <input type="button" value="/" onClick="document.cal.ans.value+='/'">
+    <input type="button" value="=" onClick="document.cal.ans.value=eval(document.cal.ans.value)">
+    
+    <br>
+    <p> BOLSA  <input type="textfield" name="bolsa" value=""></p>
+    <p> KILO  <input type="textfield" name="kilo" value=""></p>  <br>
+     <br>    
+   
+</form>
+</body>
+</html>
+
